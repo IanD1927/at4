@@ -11,6 +11,10 @@ for i in range(5):
         "aluno_nota 2":nota2,
         "media":media
     })
+    if media > 6 or media == 6:
+        print("aprovado")
+    elif media < 6:
+        print("reprovado")
     print("Resultado Final")
 for aluno_nota in alunos:
     print(f"{aluno_nota['aluno']} - aluno_nota 1: {aluno_nota['aluno_nota 1']} | aluno_nota 2:{aluno_nota['aluno_nota 2']} | media: {aluno_nota['media']:.2}")
